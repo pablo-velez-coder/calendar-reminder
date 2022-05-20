@@ -1,14 +1,17 @@
 import React from 'react';
-import { renderRoutes } from 'react-router-config';
-import { withRouter } from 'react-router-dom';
-import Routes from './routes';
+import { Routes, Route } from 'react-router-dom';
+import App from './pages/App'
+import Calendar from './pages/Calendar';
 
 function Main() {
 	return (
 	  <div className="main">
-	    {renderRoutes(Routes)}
+	  <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/calendar" element={<Calendar />} />
+    </Routes>
 	  </div>
 	);
 }
 
-export default withRouter(Main);
+export default Main;

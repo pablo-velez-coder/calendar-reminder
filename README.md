@@ -4,7 +4,6 @@
 
 # React Challenge
 
-
 ## How to deploy
 
  - Run `npm install` | `yarn install` to install all dependencies.

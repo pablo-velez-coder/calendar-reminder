@@ -1,4 +1,5 @@
 import React from 'react';
+import { CalendarComponent } from '../components/calendar';
 
 function Calendar(props) {
   // your calendar implementation Goes here!
@@ -6,6 +7,7 @@ function Calendar(props) {
   return (
     <div className="container">
         <h1>Calendar</h1>
+        <CalendarComponent />
     </div>
   )
 }
